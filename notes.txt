@@ -1,0 +1,71 @@
+Database:
+-----------
+>> A database is an organized collection of data.
+
+RDBMS --> Relational Database Management System.
+--------------------------------------------------
+>> Stores data in Tables (Rows and Columns)
+>> EX: MySQL, Oracle, PostgreSQL, Excel.
+
+MySQL 
+------
+>> Open source RDBMS. (web application)
+
+SQL---> Structured Query Language.
+>> To interact with relational database. allows you to manipulate the data in RDBMS.
+rules
+-----
+>> SQL is not case-sensitive.
+>> Every Query should end with ";"
+
+Local---> Workbench.
+
+Schema ---> table ---> Store data
+
+Datatype:
+------------
+1) Numeric DataTypes
+-----------------------
+INT ---> -200, 1, 45.
+TINYINT --> 1 byte of data (1,2,3) -127 to 127.
+SMALLINT --> 2 bytes.
+BIGINT ---> 8 bytes
+DECIMAL(p,s)--> Fixed Point Numbers--> DECIMAL(5,2) --> 656.67.
+FLOAT --> Floating Number ---> 32.343434, 34.3434
+DOUBLE ---> Large Float Numbers.
+
+2) String DataTypes
+-----------------------
+CHAR(n)--> Fixed-length String. ex: CHAR(5)--> The data should have 5 characters.
+VARCHAR(n)---> Variable-length. ex: VARCHAR(5) --> max length 5. 4,3.
+TEXT ---> Large text field
+ENUM ---> One value From alist. ex: ENUM("male","female").
+
+3)BOOLEAN
+----------
+BOOLEAN ---> True or False.
+
+4) Date and Time
+-----------------
+DATE --> only date (yyyy-mm-dd)
+TIME --> only TIME (hh:mm:ss)
+DATETIME --> store both date and time.
+
+
+Queries
+--------
+
+Creating Database ---> CREATE database "dbname";
+
+To Select a Database--> USE "dbname";
+
+Creating Table ---> CREATE TABLE attendance(
+    col1 datatype constraints,
+    col2 datatype constraints,
+    col3 datatype constraints,
+    .
+    .
+    .
+);
+
+ To Insert Data in a table--> INSERT INTO "tablename" (col details) VALUES (),(),()....;
