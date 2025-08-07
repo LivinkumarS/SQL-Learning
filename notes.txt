@@ -51,6 +51,20 @@ DATE --> only date (yyyy-mm-dd)
 TIME --> only TIME (hh:mm:ss)
 DATETIME --> store both date and time.
 
+Operators in MySQL 
+--------------------
+= Equal to
+!= not Equal to 
+< Lesser than
+> Greater than
+<= Lesser than or equal 
+>= Greater than or equal
+
+
+constraints
+-----------
+PRIMARY KEY ---> unique id for each entry (values should be unique and cannot be null)
+
 
 Queries
 --------
@@ -69,3 +83,20 @@ Creating Table ---> CREATE TABLE attendance(
 );
 
  To Insert Data in a table--> INSERT INTO "tablename" (col details) VALUES (),(),()....;
+
+ To select data from a table ---> SELECT "col detail" FROM "tb name"; col---> *(all the columns)
+ AS---> Rename the column in output.
+
+ To filter the records ---> WHERE condition.
+
+ To update the existing data--> UPDATE "tb name" SET col1=val1, col2=val2.... where condition; without filter, it will affect every records inside that table. you should use only PRIMARY KEY to select that record. when you are updating records without using PRIMARY KEY, then you have to turn off "SQL_SAFE_UPDATE" first.
+
+ To Delete an existing data--> DELETE FROM "tb name" where condition;
+
+
+ CRUD (Data)
+ -----------
+ create --> Insert
+ Read --> Select
+ Update --> Update
+ Delete --> Delete
