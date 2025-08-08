@@ -53,12 +53,42 @@ DATETIME --> store both date and time.
 
 Operators in MySQL 
 --------------------
-= Equal to
+= Equal to  
 != not Equal to 
 < Lesser than
 > Greater than
 <= Lesser than or equal 
 >= Greater than or equal
+
+BETWEEN ---> Used to filter within a range
+IN --> Used to match multiple values.
+
+LIKE ---> Used for pattern matching in string.
+
+% ---> any number of characters (0- infinite).
+_ ---> a single characters.
+
+LIMIT ---> Used to limit the number of records.
+OFFSET ---> Used to ignore the starting records.
+
+
+
+ORDER BY 
+---------
+Used to sort records in ascending or descending order.
+ASC--> ascending
+DESC--> descending
+
+
+
+
+To combine Two Conditions
+-------------------------
+AND ---> if both are true--> true
+OR ---> either one true --> true
+
+NOT --> reverse the condition.
+
 
 
 constraints
