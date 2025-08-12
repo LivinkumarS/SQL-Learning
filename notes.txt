@@ -91,7 +91,14 @@ NOT --> reverse the condition.
 
 constraints
 -----------
-PRIMARY KEY ---> unique id for each entry (values should be unique and cannot be null)
+>> It is a rule set on a column to control the type of data that can be stored there.
+
+PRIMARY KEY ---> It ensures Uniqueness and not null automatically. Only one primary key per table. That uniquly Identifies each row in a table.
+FOREIGN KEY ---> It Just Links a column in a table to a primary key in another table.
+UNIQUE ---> Ensures values in a column are different.
+NOT NULL --> A cloumn must always have a value.
+AUTO_INCREMENT ---> Automatically increases numeric values for each new row.
+
 
 
 Queries
@@ -130,6 +137,12 @@ Creating Table ---> CREATE TABLE attendance(
  Delete --> Delete
 
 
+ ALTER table 
+ ------------
+ to add a new column ---> ALTER TABLE 'tb name' ADD 'col name' datatype constraints.
+ add constraint (only works to add foreign or primary key) --> ALTER TABLE 'tb name' ADD CONSTRAINT 
+
+
 Functions:
 ---------------
 >> built in methods used to process or format data directly in queries.
@@ -158,3 +171,4 @@ NOW()--> return both date and time.
 CURDATE()--> return only date. yyyy-mm-dd
 CURTIME()--> return only time.hh:mm:ss
 DATEDIFF(date1, date2) --> difference in days. Ex: DATEDIFF('2025-02-01','2025-01-01')
+
