@@ -172,3 +172,23 @@ CURDATE()--> return only date. yyyy-mm-dd
 CURTIME()--> return only time.hh:mm:ss
 DATEDIFF(date1, date2) --> difference in days. Ex: DATEDIFF('2025-02-01','2025-01-01')
 
+
+
+Joins:
+--------
+>> Used to combine data from two or more tables based on related column between them.
+
+INNER JOIN:
+------------
+>> Returns rows where There is a match in both tables.
+ INNER JOIN "tb2name" on t1.col1=t2.col2;
+
+LEFT JOIN:
+---------
+>> Returns all rows from left table + matched rows from Right table
+LEFT JOIN "tb2name" on t1.col1=t2.col2;
+
+RIGHT JOIN:
+-----------
+>> Returns all rows from right table + matched rows from left table
+RIGHT JOIN "tb2name" on t1.col1=t2.col2;
