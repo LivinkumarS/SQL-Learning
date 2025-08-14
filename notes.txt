@@ -192,3 +192,24 @@ RIGHT JOIN:
 -----------
 >> Returns all rows from right table + matched rows from left table
 RIGHT JOIN "tb2name" on t1.col1=t2.col2;
+
+
+
+Aggregation and Grouping
+------------------------
+>> Combining Rows of data and producing a single summary value.
+
+Functions:
+-----------
+COUNT() --> Count Number of Rows.
+SUM() --> Total sum of a column
+AVG() --> Average of a column.
+MIN()  --> Mininum value of a column
+MAX() --> Max value from a column
+
+Group By 
+---------
+>> Groups rows with same values.
+
+GROUP BY "col name"
+Having condition.
