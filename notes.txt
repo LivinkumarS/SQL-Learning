@@ -140,7 +140,12 @@ Creating Table ---> CREATE TABLE attendance(
  ALTER table 
  ------------
  to add a new column ---> ALTER TABLE 'tb name' ADD 'col name' datatype constraints.
- add constraint (only works to add foreign or primary key) --> ALTER TABLE 'tb name' ADD CONSTRAINT 
+ add constraint (only works to add foreign or primary key) --> ALTER TABLE 'tb name' ADD CONSTRAINT 44
+
+ DROP tb, db 
+ ------------
+ DROP TABLE tbname;
+ DROP DATABASE dbname;
 
 
 Functions:
@@ -213,3 +218,15 @@ Group By
 
 GROUP BY "col name"
 Having condition.
+
+
+Subqueries
+----------
+>> Query nested into another query.
+>> inner query executes first.
+
+1) Single row Subquery  ---> Returns only one row.
+ex: select * from product_list where price>(select avg(price) from product_list);
+
+2) multi-row Subqueriy ---> Returns multiple rows.
+ex: select * from last_movie where actorId in (select id from actor_list where noOfMovies>50);
